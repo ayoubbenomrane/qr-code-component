@@ -103,8 +103,7 @@ body {
   /* margin: auto; */
   /* padding-top: 0.1em; */
   background-color: white;
-  width: 22.2222%; /* 320 */
-  /* height: 51.979%; */
+  max-width: 20em;
   height: auto;
   border-radius: 0.75em;
   box-sizing: border-box;
@@ -113,7 +112,7 @@ body {
   display: block;
   margin: 5% 5%;
   width: 90%; /* 288 / 320 */
-  height: 57%; /*288 px / 499 px*/
+  height: auto;
   /* object-fit: cover; */
   border-radius: 0.75em;
 }
@@ -129,26 +128,12 @@ body {
   font-size: 1.375em;
   text-align: center;
   font-family: Outfit;
+  padding-bottom: 0.5em;
 }
 .qr-code p {
   font-size: 0.9375em;
   color: #68778d;
   text-align: center;
   font-family: Outfit;
-}
-@media (max-width: 768px) {
-  .qr-card {
-    width: 80%;
-    margin: 10% auto;
-  }
-
-  .qr-code {
-    width: 90%;
-    height: auto;
-  }
-
-  .qr-code h1,
-  .qr-code p {
-    font-size: 1em;
-  }
+  padding-bottom: 2em;
 }
