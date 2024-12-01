@@ -1,19 +1,113 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html {
+  height: 100%;
+}
 body {
-  /*  */
-  height: 100vh; /* Ensure the body takes full viewport height */
-  width: 100vw;
+  height: 100%;
   margin: 0; /* Reset default margins */
+  padding: 0;
   background-color: #d5e1ef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .qr-card {
-  margin: 16% 38.33%;
-
-  padding-top: 0.1em;
+  /* margin: auto; */
+  /* padding-top: 0.1em; */
   background-color: white;
   width: 22.2222%; /* 320 */
-  height: 51.979%; /* 499 */
+  /* height: 51.979%; */
+  height: auto;
   border-radius: 0.75em;
+  box-sizing: border-box;
 }
 .qr-card img {
   display: block;
@@ -41,4 +135,20 @@ body {
   color: #68778d;
   text-align: center;
   font-family: Outfit;
+}
+@media (max-width: 768px) {
+  .qr-card {
+    width: 80%;
+    margin: 10% auto;
+  }
+
+  .qr-code {
+    width: 90%;
+    height: auto;
+  }
+
+  .qr-code h1,
+  .qr-code p {
+    font-size: 1em;
+  }
 }
